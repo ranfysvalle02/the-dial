@@ -10,8 +10,8 @@
 
 ---
 
-> *"The psychotic drowns in the same waters in which the mystic swims with delight."*
-> — Joseph Campbell
+> *"We're all hallucinating all the time; when we agree about our hallucinations, we call it reality."*
+> — Anil Seth (Neuroscientist)
 
 ---
 
