@@ -466,3 +466,137 @@ It is slow. It is not glamorous. It is the same mechanism that fills a Q-table, 
 *The cue is in your hand. But sometimes the hand shakes. And that is when you let someone else steady it — not take it. Just steady it.*
 
 *Same machine. Same compassion. Same loop. Always.*
+
+-----
+
+# OUTPUT of `demo.py`
+
+```
+=== SCENARIO 1: THE HEALTHY DIAL ===
+[Meets a friendly dog]
+  Incoming Evidence  : 0.80
+  Prior (Expectation): 0.50
+  Pred. Error (Surprise): +0.30
+  Felt Experience    : 0.65
+  New Prior Updated  : 0.65
+  Dial (Prior Prec)  : 1.00
+
+[Has a good conversation]
+  Incoming Evidence  : 0.90
+  Prior (Expectation): 0.65
+  Pred. Error (Surprise): +0.25
+  Felt Experience    : 0.78
+  New Prior Updated  : 0.78
+  Dial (Prior Prec)  : 1.00
+
+=== SCENARIO 2: PSYCHOSIS (High Prior Precision) ===
+[Friend says 'I love you']
+  Incoming Evidence  : 0.90
+  Prior (Expectation): 0.10
+  Pred. Error (Surprise): +0.80
+  Felt Experience    : 0.12
+  New Prior Updated  : 0.12
+  Dial (Prior Prec)  : 50.00
+
+[Gets promoted at work]
+  Incoming Evidence  : 1.00
+  Prior (Expectation): 0.12
+  Pred. Error (Surprise): +0.88
+  Felt Experience    : 0.13
+  New Prior Updated  : 0.13
+  Dial (Prior Prec)  : 50.00
+
+>>> ANTIPSYCHOTIC APPLIED: Prior precision reduced. Volume turned down. <<<
+
+[Friend says 'I love you' (Medicated)]
+  Incoming Evidence  : 0.90
+  Prior (Expectation): 0.13
+  Pred. Error (Surprise): +0.77
+  Felt Experience    : 0.26
+  New Prior Updated  : 0.26
+  Dial (Prior Prec)  : 5.00
+
+=== SCENARIO 3: DEPRESSION (The Model That Says 'Don't Bother') ===
+[Beautiful sunny day]
+  Incoming Evidence  : 0.80
+  Prior (Expectation): 0.00
+  Pred. Error (Surprise): +0.80
+  Felt Experience    : 0.04
+  New Prior Updated  : 0.04
+  Dial (Prior Prec)  : 20.00
+
+[Completes a difficult task]
+  Incoming Evidence  : 0.90
+  Prior (Expectation): 0.04
+  Pred. Error (Surprise): +0.86
+  Felt Experience    : 0.08
+  New Prior Updated  : 0.08
+  Dial (Prior Prec)  : 20.00
+
+>>> SSRI APPLIED: Prior precision gently softened. Neuroplasticity increasing. <<<
+
+[Beautiful sunny day (Week 2)]
+  Incoming Evidence  : 0.80
+  Prior (Expectation): 0.08
+  Pred. Error (Surprise): +0.72
+  Felt Experience    : 0.26
+  New Prior Updated  : 0.26
+  Dial (Prior Prec)  : 3.00
+
+[Completes a difficult task (Week 4)]
+  Incoming Evidence  : 0.90
+  Prior (Expectation): 0.26
+  Pred. Error (Surprise): +0.64
+  Felt Experience    : 0.42
+  New Prior Updated  : 0.42
+  Dial (Prior Prec)  : 3.00
+
+=== SCENARIO 4: PTSD (The Prior That Will Not Decay) ===
+>>> CATACLYSMIC SENSORY INPUT. SURVIVAL OVERRIDE TRIGGERED. <<<
+  Traumatic Prior Written: 0.00
+  Dial locked at extreme precision: 1000.00
+
+[Hears a car backfire (10 years later)]
+  Incoming Evidence  : 0.90
+  Prior (Expectation): 0.00
+  Pred. Error (Surprise): +0.90
+  Felt Experience    : 0.00
+  New Prior Updated  : 0.00
+  Dial (Prior Prec)  : 1000.00
+
+[Safe at home with family]
+  Incoming Evidence  : 1.00
+  Prior (Expectation): 0.00
+  Pred. Error (Surprise): +1.00
+  Felt Experience    : 0.00
+  New Prior Updated  : 0.00
+  Dial (Prior Prec)  : 1000.00
+
+>>> PSYCHEDELIC APPLIED: Prior precision flattened. Gates open for update. <<<
+
+[Therapeutic container: 'I am safe now']
+  Incoming Evidence  : 1.00
+  Prior (Expectation): 0.00
+  Pred. Error (Surprise): +1.00
+  Felt Experience    : 0.91
+  New Prior Updated  : 0.91
+  Dial (Prior Prec)  : 0.10
+
+[Processing memory: World is not entirely dangerous]
+  Incoming Evidence  : 0.90
+  Prior (Expectation): 0.91
+  Pred. Error (Surprise): -0.01
+  Felt Experience    : 0.90
+  New Prior Updated  : 0.90
+  Dial (Prior Prec)  : 0.10
+
+>>> COMPOUND CLEARS: Integration phase. Dial returns to healthy baseline. <<<
+
+[Everyday life, post-integration]
+  Incoming Evidence  : 0.80
+  Prior (Expectation): 0.90
+  Pred. Error (Surprise): -0.10
+  Felt Experience    : 0.85
+  New Prior Updated  : 0.85
+  Dial (Prior Prec)  : 1.00
+```
