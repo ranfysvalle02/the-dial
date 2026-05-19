@@ -1,10 +1,10 @@
 # the-dial
 
+![](the-dial.png)
+
 ---
 
 # The Dial
-
-![](dial-bg.png)
 
 ### The Dial: Confabulation, Psychosis, and the Prediction Engine Running Every Mind
 
